@@ -14,10 +14,10 @@ app.get("/dl", (req, res) => {
     res.download("./Files/"+path);
 });
 
-const publicURL = "https://terabox-to-telegram-bot.onrender.com/dl?name=";
+const publicURL = "https://ashlynn.serv00.net/Ashlynnterabox.php/?url=";
 
-const BotToken = "6660892564:AAHk03a2AnZpszg-wRBYJ8iSeJd7mtz61-c";
-const ChatID = "1196575861";
+const BotToken = "7429555769:AAFR6jE5wBelOz1UVtIwXZSPewnCzTjZSVkc";
+const ChatID = "5071005351";
 const bot = new Telegraf(BotToken);
 
 const ReportError = (error) => {
@@ -33,7 +33,7 @@ const DownloadFile = async (filelink,msg) => {
         //console.log(filedata);
         if(filedata.downloadStatus === 'COMPLETE'){
             const filesize_inmb = fs.statSync(filedata.filePath).size / 1000000;
-            if(filesize_inmb > 49){
+            if(filesize_inmb > 5099){
                 const name = filedata.filePath.split("/")[2];
                 const link = publicURL + name;
                 msg.reply("File size is more than 50MB. So, here is the download link: " + link);
