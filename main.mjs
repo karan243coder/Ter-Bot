@@ -16,7 +16,7 @@ app.get("/dl", (req, res) => {
 
 const publicURL = "https://ashlynn.serv00.net/Ashlynnterabox.php/?url=";
 
-const BotToken = "7429555769:AAFR6jE5wBelOz1UVtIwXZSPewnCzTjZSVkc";
+const BotToken = "7429555769:AAFE1d5EX_F0J9AH_P5QgPuqyttv6VXH1PI";
 const ChatID = "5071005351";
 const bot = new Telegraf(BotToken);
 
